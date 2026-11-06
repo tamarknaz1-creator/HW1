@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Assignment01Q04 {
-    public static void shiftRightOnce (int[] array) {
+    private static void shiftRightOnce (int[] array) {
         // Save the last value, then shift elements right.
         int temp = array[array.length - 1];
         for (int i = array.length - 1; i > 0; i--) {
@@ -10,7 +10,7 @@ public class Assignment01Q04 {
         array[0] = temp;
     }
 
-    public static void shiftLeftOnce (int[] array) {
+    private static void shiftLeftOnce (int[] array) {
         // Save the first value, then shift elements left.
         int temp = array[0];
         for (int i = 0; i < array.length - 1; i++) {
